@@ -10,8 +10,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
    <style>
+    button{
+      background-color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(255,255,255);
+      border: none;
+      height: 50px;
+      width: 100px;
+    }
+
+    h3{
+     background-color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button:hover{
+      background-color: red;
+    }
+    button:active{
+      background-color: purple;
+    }
    * {
    box-sizing: border-box;
    }
@@ -95,9 +115,9 @@
     
     <div class="navbar">
         <a href="Tiffin ordering system.html">Home</a>
-        <a href="D:\xampp4\htdocs\foodorder\signup.php">About</a>
+        <a href="">About</a>
         <div class="dropdown">
-          <button class="dropbtn">Food categories 
+          <button class="dropbtn">Food 
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
@@ -117,11 +137,10 @@
             <a href="#">Register</a>
           </div>
         </div> 
-        <a href="#">Contact</a>
-        <a href="#">Feedback</a>
+        <a href="Tiffin contact feedback page.html">Contact</a>
+        <a href="Tiffin contact feedback page.html">Feedback</a>
       </div>
 
-          <img src="/Tiffin header img_3.jpg" height="400" width="1503" alt="Tiffin Ordering System image">
           <h2 style="color: rgb(255, 174, 0);" ><u>Welcome to Tiffin Ordering System:</u></h2>
           <p style="color: rgb(255, 255, 255);" ><i>Retail Tiffin delivery is a courier service in which a company, store, or independent food-delivery company delivers food to a customer. An
             order is typically made either through a company or grocer's website or mobile app, or through a food ordering company. The delivered
@@ -137,50 +156,61 @@
     <div class="row">
     <div class="column">
       <a href="https://en.wikipedia.org/wiki/List_of_Italian_dishes" target="_blank">
-    <img src="italian food image.jpg" height="300" width="100" alt="italian" style="width:100%">
+    <img src="https://i.pinimg.com/1200x/e0/c5/b5/e0c5b5ee8e4c56894a8550da6c789d73.jpg" height="700" width="40" alt="italian" style="width:100%">
     </a>
-    <h3 style="color: rgb(255, 255, 255);" >Italian Food</h3>
+    <h3 style="color: rgb(255, 255, 255);" >Italian Food <button title="Add Food" onclick="cart+=1; console.log(`Cart Quantity: ${cart}`); alert(`Added to Cart! \n Cart Quantity: ${cart}`
+    );">Add to cart</button> <button title="Remove from cart" onclick="if(cart>0) {cart-=1; `Cart Quantity: ${cart}`; alert(`Item Removed \n Cart Quantity: ${cart}`);}else alert(`Cart Quantity: 0`);">Remove Item</button></h3>
   </div>
   
   <div class="column">
     <a href="https://www.thespruceeats.com/most-popular-indian-vegetarian-dishes-1958017" target="_blank" >
-    <img src="veg food image.jpg" height="300" width="100" alt="veg food" style="width:100%">
+    <img src="https://i.pinimg.com/1200x/e8/c4/da/e8c4dadd7dde3ad5e6a4209d7560b54f.jpg" height="700" width="40" alt="veg food" style="width:100%">
     </a>
-    <h3 style="color: rgb(255, 255, 255);"  >veg Food</h3>
+    <h3 style="color: rgb(255, 255, 255);" >Veg Food <button title="Add Food" onclick="cart+=1; console.log(`Cart Quantity: ${cart}`); alert(`Added to Cart! \n Cart Quantity: ${cart}`
+    );">Add to cart</button> <button title="Remove from cart" onclick="if(cart>0) {cart-=1; `Cart Quantity: ${cart}`; alert(`Item Removed \n Cart Quantity: ${cart}`);}else alert(`Cart Quantity: 0`);">Remove Item</button></h3>
   </div>
 </div>
 
 <div class="row">
 <div class="column">
     <a href="https://en.wikipedia.org/wiki/Chinese_cuisine" target="_blank">
-    <img src="chinese food images.jpg" height="300" width="100" alt="veg food" style="width:100%">
+    <img src="https://i.pinimg.com/736x/e1/86/b4/e186b48f5f00f06e1c8de500cc8686f7.jpg" height="700" width="40" alt="veg food" style="width:100%">
     </a>
-    <h3 style="color: rgb(255, 255, 255);"  >Chinese Food</h3>
-  </div>
+    <h3 style="color: rgb(255, 255, 255);"  >Chinese Food <button title="Add Food" onclick="cart+=1; console.log(`Cart Quantity: ${cart}`); alert(`Added to Cart! \n Cart Quantity: ${cart}`
+    );">Add to cart</button> <button title="Remove from cart" onclick="if(cart>0) {cart-=1; `Cart Quantity: ${cart}`; alert(`Item Removed \n Cart Quantity: ${cart}`);}else alert(`Cart Quantity: 0`);">Remove Item</button></h3>
+   </div>
 
   <div class="column">
     <a href="https://en.wikipedia.org/wiki/Punjabi_cuisine" target="_blank">
-    <img src="punjabi food image.jpg" height="300" width="100" alt="veg food" style="width:100%">
+    <img src="https://i.pinimg.com/1200x/7f/d3/7d/7fd37d69375412a6482467c22c7adf42.jpg" height="700" width="40" alt="veg food" style="width:100%">
     </a>
-    <h3 style="color: rgb(255, 255, 255);"  >Punjabi Food</h3>
+    <h3 style="color: rgb(255, 255, 255);"  >Punjabi Food <button title="Add Food"onclick="cart+=1; console.log(`Cart Quantity: ${cart}`); alert(`Added to Cart! \n Cart Quantity: ${cart}`
+    );">Add to cart</button> <button title="Remove from cart" onclick="if(cart>0) {cart-=1; `Cart Quantity: ${cart}`; alert(`Item Removed \n Cart Quantity: ${cart}`);}else alert(`Cart Quantity: 0`);">Remove Item</button></h3>
   </div>
 </div>
 
 <div class="row">
   <div class="column">
     <a href="https://food.ndtv.com/food-drinks/30-best-indian-non-vegetarian-curries-to-try-at-home-2249183" target="_blank">
-    <img src="non-veg food image.jpg" height="300" width="100" alt="veg food" style="width:100%">
+    <img src="https://i.pinimg.com/736x/b1/e6/ae/b1e6ae89ae2c3b209ca867ff8de3c3dd.jpg" height="700" width="40" alt="non-veg food" style="width:100%">
     </a>
-    <h3 style="color: rgb(255, 255, 255);"  >Non-veg Food</h3>
+    <h3 style="color: rgb(255, 255, 255);"  >Non-veg Food <button title="Add Food"onclick="cart+=1; console.log(`Cart Quantity: ${cart}`); alert(`Added to Cart! \n Cart Quantity: ${cart}`
+    );">Add to cart</button> <button title="Remove from cart" onclick="if(cart>0) {cart-=1; `Cart Quantity: ${cart}`; alert(`Item Removed \n Cart Quantity: ${cart}`);}else alert(`Cart Quantity: 0`);">Remove Item</button></h3>
   </div>
 
   <div class="column">
     <a href="https://en.wikipedia.org/wiki/Swiss_cuisine" target="_blank">
-    <img src="swiss food image.jpg" height="300" width="100" alt="veg food" style="width:100%">
+    <img src="https://i.pinimg.com/1200x/50/1c/49/501c49058da76b6eced2f82a4caf6d9b.jpg" height="700" width="40" alt="swiss food" style="width:100%">
    </a>
-    <h3 style="color: rgb(255, 255, 255);"  >Swiss Food</h3>
+    <h3 style="color: rgb(255, 255, 255);"  >Swiss Food <button title="Add Food"onclick="cart+=1; console.log(`Cart Quantity: ${cart}`); alert(`Added to Cart! \n Cart Quantity: ${cart}`
+    );">Add to cart</button> <button title="Remove from cart" onclick="if(cart>0) {cart-=1; `Cart Quantity: ${cart}`; alert(`Item Removed \n Cart Quantity: ${cart}`);}else alert(`Cart Quantity: 0`);">Remove Item</button></h3>
   </div>
 </div>
-<a href="#top" style="color: rgb(255, 255, 255);" >Back to top</a>
+
+<script>
+  let cart = 0;
+</script>
+<a href="#top" style="color: rgb(255, 255, 255);" ><button>Back to top</button></a>
 </body>
 </html>
+
